@@ -3,9 +3,10 @@ var companyNameLoc = document.querySelector(".company-name");
 var startStoryButton = document.querySelector(".start-screen");
 var firstScreen = document.querySelector(".first-screen");
 var namingButton = document.querySelector(".naming-button");
-var secondScreen = document.getElementsByClassName(".second-screen");
-
-
+var secondScreen = document.querySelector(".second-screen");
+var secondScreenButton = document.querySelector(".second-screen-button");
+var companyValue = document.querySelector(".company-value");
+var numberOfInvestors = document.querySelector(".number-of-investors");
 
 
 
@@ -24,11 +25,13 @@ startStoryButton.addEventListener("click", function(){
 namingButton.addEventListener("click", function(){
     companyName = prompt("Enter the name of your company", "Big Startup");
     console.log(companyName);
-    // secondScreen.style.display = "block";
     companyNameLoc.innerHTML = companyName;
     console.log(companyName);
 });
 
+secondScreenButton.addEventListener("click", function(){
+    secondScreen.style.display = "block";
+});
 
 
 // INSERT_VARIABLE.addEventListener('click', function(){

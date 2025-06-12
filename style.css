@@ -186,3 +186,7 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+
+.constant-text {
+    font-weight:bold;
+}

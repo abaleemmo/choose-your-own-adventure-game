@@ -1,5 +1,6 @@
 // Declare variables below to save the different divs of your story.
 var companyNameLoc = document.querySelector(".company-name");
+var companyNameLoc2 = document.querySelector(".company-name2")
 var startStoryButton = document.querySelector(".start-screen");
 var firstScreen = document.querySelector(".first-screen");
 var namingButton = document.querySelector(".naming-button");
@@ -7,8 +8,7 @@ var secondScreen = document.querySelector(".second-screen");
 var secondScreenButton = document.querySelector(".second-screen-button");
 var companyValue = document.querySelector(".company-value");
 var numberOfInvestors = document.querySelector(".number-of-investors");
-
-
+let companyName = "";
 
 
 
@@ -24,9 +24,8 @@ startStoryButton.addEventListener("click", function(){
 
 namingButton.addEventListener("click", function(){
     companyName = prompt("Enter the name of your company", "Big Startup");
-    console.log(companyName);
     companyNameLoc.innerHTML = companyName;
-    console.log(companyName);
+    companyNameLoc2.innerHTML = companyName;
 });
 
 secondScreenButton.addEventListener("click", function(){

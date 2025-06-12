@@ -91,13 +91,15 @@ button:hover {
 }
 
 /* Style the images in the screens */
-.option-one-screen img,
-.option-two-screen img,
+.first-screen img,
+.second-screen img,
 .option-one-end img,
 .option-two-end img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: right;
 }
 
 /* Style the text in the screens */
@@ -107,4 +109,78 @@ button:hover {
 .option-two-end h1 {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.first-screen {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 350px;
+    gap: 0;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    min-width: 0;
+}
+
+.stat-tracker {
+    flex: 1;
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bottom-left {
+    flex: 1;
+    display: flex;
+    flex-direction: row;      /* Arrange buttons side by side */
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 0;
+    padding-bottom: 24px;
+}
+
+.bottom-left button {
+    flex: 1;                  /* Each button takes up half the width */
+    margin: 0;                /* Remove default margin for tight fit */
+    border-radius: 0;         /* Optional: square edges between buttons */
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 0;
+}
+
+.right-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
 }

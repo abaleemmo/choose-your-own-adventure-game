@@ -77,8 +77,8 @@ button:hover {
 }
 
 /* Style the screens for option one and option two */
-.option-one-screen,
-.option-two-screen,
+.first-screen,
+.second-screen,
 .option-one-end,
 .option-two-end {
     background-color: #fff;

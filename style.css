@@ -162,7 +162,9 @@ button:hover {
 .bottom-left button {
     flex: 1;                  /* Each button takes up half the width */
     margin: 0;                /* Remove default margin for tight fit */
-    border-radius: 0;         /* Optional: square edges between buttons */
+    border-radius: 5px;         /* Optional: square edges between buttons */
+    border-color: black;
+    border-style: solid;
 }
 
 .right-side {
